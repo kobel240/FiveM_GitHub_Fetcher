@@ -1,7 +1,7 @@
 # FiveM GitHub Fetcher
 A **very** simple script to fetch and pull your FiveM resources without having to SSH to your server. Simply create a systemd service to start your txAdmin at boot, setup your github repository and you'll never have to tunnel again.
 
-Use the command `fetch` in the server console to fetch your latest commit, then use `pull` to pull them to your server.
+Use the command `fetch` in the server console to fetch your latest commit, then use `pull` to pull them to your server. Don't forget to restart your server.
 
 ## Requirements
 - git installed on your server
