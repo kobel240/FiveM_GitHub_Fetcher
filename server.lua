@@ -1,7 +1,10 @@
+-- Path name, for example "root/server"
+path = "set path here" 
+
 RegisterCommand("fetch", function()
     print("fetching")
     Citizen.CreateThread(function()
-        local result = os.execute("cd /root/FiveM_V3/server-data && git fetch")
+        local result = os.execute("cd "..path.." && git fetch")
         if result then
             print("fetched, ready to pull")
         else
@@ -13,7 +16,7 @@ end)
 RegisterCommand("pull", function()
     print("pulling")
     Citizen.CreateThread(function()
-        local result = os.execute("cd /root/FiveM_V3/server-data && git pull")
+        local result = os.execute("cd "..path.." && git pull")
         if result then
             print("pulled")
         else
