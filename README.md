@@ -3,6 +3,11 @@ A **very** simple script to fetch and pull your FiveM resources without having t
 
 Use the command `fetch` in the server console to fetch your latest commit, then use `pull` to pull them to your server. Don't forget to restart your server.
 
+## Setup
+- add this resource in your resources folder and give it a name
+- ensure it in your server.cfg
+- Open the server.lua file and change the path to the path your directory is in
+
 ## Requirements
 - git installed on your server
 - txAdmin to access the console *(or another remote access panel?)*
